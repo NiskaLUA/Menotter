@@ -11,7 +11,7 @@ AddEventHandler('chatMessage', function(source, n, message)
     
       if (playerID < 1 or playerID > 32) then
     
-        TriggerClientEvent('chatMessage', source, "SYSTEM", {200, 0, 0}, "Invalid PlayerID!")
+        TriggerClientEvent('chatMessage', source, "SYSTEM", {200, 0, 0}, "ID du joueur invalide !")
         return 
       end
 
@@ -22,7 +22,7 @@ AddEventHandler('chatMessage', function(source, n, message)
       local eventTarget = source 
       local messageSender = "SYSTEM" 
       local messageSenderColor = {200, 0, 0} 
-      local message = "Usage: /cuff <PlayerID>" 
+      local message = "Utile : /menotter [ID]" 
      
       TriggerClientEvent(event, eventTarget, messageSender, messageSenderColor, message) 
 
