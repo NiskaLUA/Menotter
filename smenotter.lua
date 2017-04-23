@@ -3,7 +3,7 @@
 AddEventHandler('chatMessage', function(source, n, message) 
   local args = stringsplit(message, " ")
 
-  if (args[1] == "/cuff") then 
+  if (args[1] == "/menotter") then 
     CancelEvent() 
 
     if (args[2] ~= nil) then 
